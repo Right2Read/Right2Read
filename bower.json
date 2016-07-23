@@ -1,0 +1,20 @@
+{
+  "name": "right2read",
+  "description": "Responsive web app to assist instructors in reading assessments",
+  "main": "public/client/app.js",
+  "authors": [
+    "Karen Rose <karen.rose807@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/Right2Read/Right2Read",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.0"
+  }
+}

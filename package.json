@@ -1,0 +1,22 @@
+{
+  "name": "right2read",
+  "version": "1.0.0",
+  "description": "Responsive web app to assist instructors in reading assessments",
+  "main": "public/client/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Right2Read/Right2Read.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Right2Read/Right2Read/issues"
+  },
+  "homepage": "https://github.com/Right2Read/Right2Read#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
