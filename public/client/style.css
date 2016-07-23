@@ -3,16 +3,20 @@
     padding: 10px;
     border: 15px solid blue;
     margin: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 h1 {
     text-align: center;
-    font-family: "Arial";
+    font-family: "Avenir";
     font-style: normal;
     font-size: 50px;
     color: blue;
     text-transform: lowercase;
 }
-#nextButton{
+.nextButton{
     float: right;
     border: none;
     color: blue;
@@ -21,6 +25,9 @@ h1 {
     display: inline-block;
     font-size: 16px;
     border-radius: 4px;
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 $blue: #a3d5d3;
@@ -51,7 +58,7 @@ body {
   cursor: pointer;
   display: block;
   margin-left: auto;
-  margin-right: auto
+  margin-right: auto;
 }
 
 .button1 {
@@ -102,6 +109,19 @@ body {
 }
 
 .button4:hover {
+  background-color: #f44336;
+  color: white
+}
+
+.button5 {
+  background-color: white;
+  color: #f44336;
+  border: 2px solid #f44336;
+  border-radius: 8px;
+  width: 200px;
+}
+
+.button5:hover {
   background-color: #f44336;
   color: white
 }
