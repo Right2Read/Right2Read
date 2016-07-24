@@ -20,6 +20,47 @@
   display: none;
 }
 
+#videoRecommendations {
+    padding: 10px;
+    padding-left: 50;
+    padding-right: 50;
+    margin: 0;
+    display: none;
+    border-radius: 8px;
+    text-align: center;
+}
+
+#curriculumRecommendations {
+    padding: 10px;
+    padding-left: 50;
+    padding-right: 50;
+    margin: 0;
+    display: none;
+    border-radius: 8px;
+    text-align: center;
+}
+
+#programRecommendations {
+    max-width: none;
+    padding: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: 0;
+    display: none;
+    border-radius: 8px;
+    text-align: center;
+}
+
+iframe {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+img {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
 #flashcard {
     width: 320px;
     padding: 10px;
@@ -29,6 +70,16 @@
     margin-left: auto;
     margin-right: auto;
     border-radius: 8px;
+}
+
+#appRecommendations {
+    padding: 10px;
+    padding-left: 50;
+    padding-right: 50;
+    margin: 0;
+    display: none;
+    border-radius: 8px;
+    text-align: center;
 }
 
 h1 {
@@ -45,6 +96,14 @@ h2 {
     font-family: "Avenir";
     font-style: normal;
     font-size: 20px;
+    color: black;
+}
+
+h3 {
+    text-align: center;
+    font-family: "Avenir";
+    font-style: normal;
+    font-size: 50px;
     color: black;
 }
 

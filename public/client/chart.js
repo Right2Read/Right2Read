@@ -4,7 +4,6 @@ var myChart = new Chart(ctx, {
     data: {
         labels: ["Automatic Correct", "Labored Correct", "Labored Wrong", "Automatic Wrong", "Didn't Try"],
         datasets: [{
-            label: 'Responses at a Glance',
             data: [5, 3, 2, 3, 2],
             backgroundColor: [
                 '#4CAF50',

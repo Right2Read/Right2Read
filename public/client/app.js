@@ -33,8 +33,16 @@ database.ref('/sounding-out/').once('value').then(function(snapshot) {
       wordCounter++;
     } else {
       showSoundingOutSummary();
+      showRecommendations();
     }
 
+  }
+
+  function showRecommendations() {
+    $('#videoRecommendations').show();
+    $('#appRecommendations').show();
+    $('#curriculumRecommendations').show();
+    $('#programRecommendations').show();
   }
 
   $('.nextButton').click(function() {
