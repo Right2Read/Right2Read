@@ -21,10 +21,62 @@ database.ref('/sounding-out/').once('value').then(function(snapshot) {
   soundSymbol = soundingOutData['sound-symbol'];
   nonsenseWords = soundingOutData['nonsense-words'];
 
+  var wordCounter = 0;
+  showFlashcard();
 
-  for (var i = 0; i < nonsenseWords.length; i++) {
-    $('#flashcard').prepend('<h1>' + nonsenseWords[0] + '</h1>');
+  function showFlashcard() {
+    $('#nonsenseScoring').hide();
+
+    if (wordCounter < nonsenseWords.length) {
+      $('#flashcard').prepend('<h1>' + nonsenseWords[wordCounter] + '</h1>');
+      $('#question').show();
+      wordCounter++;
+    } else {
+      //TODO show summary page
+    }
+
   }
+
+  $('.nextButton').click(function() {
+    console.log('Next button clicked');
+    showTeacherRating();
+    $('#flashcard h1').remove();
+  });
+
+  function showTeacherRating() {
+    $('#question').hide();
+    $('#nonsenseScoring').show();
+  }
+
+  $('.button1').click(function() {
+    numberOfAutomaticCorrect++;
+    console.log("Num of Auto Correct " + numberOfAutomaticCorrect);
+    showFlashcard();
+  })
+
+  $('.button2').click(function() {
+    numberOfLaboredCorrect++;
+    console.log("Num of Labored Correct " + numberOfLaboredCorrect);
+    showFlashcard();
+  })
+
+  $('.button3').click(function() {
+    numberOfLaboredWrong++;
+    console.log("Num of Labored Wrong " + numberOfLaboredWrong);
+    showFlashcard();
+  })
+
+  $('.button4').click(function() {
+    numberOfAutomaticWrong++;
+    console.log("Num of Auto Wrong " + numberOfAutomaticWrong);
+    showFlashcard();
+  })
+
+  $('.button5').click(function() {
+    numberOfDidntTry++;
+    console.log("Num of Didnt Try " + numberOfDidntTry);
+    showFlashcard();
+  });
 });
 
 var app;
@@ -36,13 +88,7 @@ var numberOfAutomaticWrong = 0;
 var numberOfDidntTry = 0
 
 
-$('#nonsenseScoring').hide();
 
-$('.nextButton').click(function() {
-  console.log('Next button clicked');
-  $('#nonsenseScoring').show();
-  $('#flashcard').hide();
-});
 
 
 // var app;
@@ -68,38 +114,3 @@ $('.nextButton').click(function() {
 //     }
 //   }
 // }());
-
-$('.button1').click(function() {
-  numberOfAutomaticCorrect++;
-  console.log("Num of Auto Correct " + numberOfAutomaticCorrect);
-  $('#nonsenseScoring').hide();
-  $('#flashcard').show();
-})
-
-$('.button2').click(function() {
-  numberOfLaboredCorrect++;
-  console.log("Num of Labored Correct " + numberOfLaboredCorrect);
-  $('#nonsenseScoring').hide();
-  $('#flashcard').show();
-})
-
-$('.button3').click(function() {
-  numberOfLaboredWrong++;
-  console.log("Num of Labored Wrong " + numberOfLaboredWrong);
-  $('#nonsenseScoring').hide();
-  $('#flashcard').show();
-})
-
-$('.button4').click(function() {
-  numberOfAutomaticWrong++;
-  console.log("Num of Auto Wrong " + numberOfAutomaticWrong);
-  $('#nonsenseScoring').hide();
-  $('#flashcard').show();
-})
-
-$('.button5').click(function() {
-  numberOfDidntTry++;
-  console.log("Num of Didnt Try " + numberOfDidntTry);
-  $('#nonsenseScoring').hide();
-  $('#flashcard').show();
-});
