@@ -4,14 +4,14 @@
 }
 
 #summary {
-  /*display: none;*/
+  display: none;
 }
 
 #myChart {
   width: 200px;
   height: 100px;
   padding-top: 30px;
-  padding-bottom: 100px;
+  padding-bottom: 30px;
 }
 
 #question {
@@ -28,45 +28,59 @@
   display: none;
 }
 
+#appRecommendations {
+  padding: 10px;
+  padding-left: 50;
+  padding-right: 50;
+  padding-bottom: 50px;
+  margin: 0;
+  display: none;
+  border-radius: 8px;
+  text-align: center;
+}
+
 #videoRecommendations {
-    padding: 10px;
-    padding-left: 50;
-    padding-right: 50;
-    margin: 0;
-    display: none;
-    border-radius: 8px;
-    text-align: center;
+  padding: 10px;
+  padding-left: 50;
+  padding-right: 50;
+  padding-bottom: 50px;
+  margin: 0;
+  display: none;
+  border-radius: 8px;
+  text-align: center;
 }
 
 #curriculumRecommendations {
-    padding: 10px;
-    padding-left: 50;
-    padding-right: 50;
-    margin: 0;
-    display: none;
-    border-radius: 8px;
-    text-align: center;
+  padding: 10px;
+  padding-left: 50;
+  padding-right: 50;
+  padding-bottom: 50px;
+  margin: 0;
+  display: none;
+  border-radius: 8px;
+  text-align: center;
 }
 
 #programRecommendations {
-    max-width: none;
-    padding: 10px;
-    padding-left: 50px;
-    padding-right: 50px;
-    margin: 0;
-    display: none;
-    border-radius: 8px;
-    text-align: center;
+  max-width: none;
+  padding: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+  margin: 0;
+  display: none;
+  border-radius: 8px;
+  text-align: center;
 }
 
 iframe {
-    padding-left: 25px;
-    padding-right: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 img {
-    padding-left: 50px;
-    padding-right: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 #flashcard {
@@ -80,39 +94,37 @@ img {
   border-radius: 8px;
 }
 
-#appRecommendations {
-    padding: 10px;
-    padding-left: 50;
-    padding-right: 50;
-    margin: 0;
-    display: none;
-    border-radius: 8px;
-    text-align: center;
-}
-
 h1 {
-    text-align: center;
-    font-family: "Avenir";
-    font-style: normal;
-    font-size: 100px;
-    color: black;
-    text-transform: lowercase;
+  text-align: center;
+  font-family: "Avenir";
+  font-style: normal;
+  font-size: 100px;
+  color: black;
+  text-transform: lowercase;
 }
 
 h2 {
-    text-align: center;
-    font-family: "Avenir";
-    font-style: normal;
-    font-size: 60px;
-    color: black;
+  text-align: center;
+  font-family: "Avenir";
+  font-style: normal;
+  font-size: 60px;
+  color: black;
 }
 
 h3 {
-    text-align: center;
-    font-family: "Avenir";
-    font-style: normal;
-    font-size: 20px;
-    color: black;
+  text-align: center;
+  font-family: "Avenir";
+  font-style: normal;
+  font-size: 40px;
+  color: black;
+}
+
+h4 {
+  text-align: center;
+  font-family: "Avenir";
+  font-style: normal;
+  font-size: 20px;
+  color: black;
 }
 
 p {
