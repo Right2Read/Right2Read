@@ -32,7 +32,7 @@ database.ref('/sounding-out/').once('value').then(function(snapshot) {
       $('#question').show();
       wordCounter++;
     } else {
-      //TODO show summary page
+      showSoundingOutSummary();
     }
 
   }
@@ -74,7 +74,7 @@ database.ref('/sounding-out/').once('value').then(function(snapshot) {
 
   $('.button5').click(function() {
     numberOfDidntTry++;
-    console.log("Num of Didnt Try " + numberOfDidntTry);
+    console.log("Num of Didn't Try " + numberOfDidntTry);
     showFlashcard();
   });
 });
@@ -86,6 +86,27 @@ var numberOfLaboredCorrect = 0;
 var numberOfLaboredWrong = 0;
 var numberOfAutomaticWrong = 0;
 var numberOfDidntTry = 0
+
+function showSoundingOutSummary() {
+  console.log('Summary');
+  var range = [
+    [0, 5],
+    [6, 8],
+    [9, 15]
+  ];
+  var score = ['Weak', 'Ok', 'Strong'];
+  var result = numberOfAutomaticCorrect + Math.floor(numberOfLaboredCorrect * .5);
+
+  for (var i = 0; i < range.length; i++) {
+    var lowEnd = range[i][0];
+    var highEnd = range[i][1];
+
+    if (result > lowEnd && result < highEnd) {
+      console.log(score[i], result);
+      return;
+    }
+  }
+}
 
 
 
