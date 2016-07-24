@@ -1,3 +1,11 @@
+#question {
+  display: none;
+}
+
+#nonsenseScoring {
+  display: none;
+}
+
 #flashcard {
     width: 320px;
     padding: 10px;
