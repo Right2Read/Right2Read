@@ -1,5 +1,5 @@
-var server = 'http://127.0.0.1:5000/';
-// var server = 'https://right2read-9ebcd.firebaseapp.com/';
+// var server = 'http://127.0.0.1:5000/';
+var server = 'https://right2read-9ebcd.firebaseapp.com/';
 
 // Firebase config
 var config = {
@@ -107,6 +107,59 @@ function showSoundingOutSummary() {
   }
 
   $('#summary').show();
+}
+
+$('#authButton').text('Login');
+
+// $('#authButton').click(function() {
+//   $(this.text)('Login');
+// };
+
+$('#authButton').click(function() {
+  console.log('Button value is ', $(this).val());
+
+  if ($(this).val() === 'Logout') {
+    console.log('Logging out');
+    logout();
+  } else {
+    console.log('Login clicked');
+    login();
+  }
+});
+
+function login() {
+  var provider = new firebase.auth.GoogleAuthProvider();
+  provider.addScope('https://www.googleapis.com/auth/plus.login');
+
+  firebase.auth().signInWithPopup(provider).then(function(result) {
+    // This gives you a Google Access Token. You can use it to access the Google API.
+    var token = result.credential.accessToken;
+    // The signed-in user info.
+    var user = result.user;
+
+    $('#authButton').text('Logout');
+
+  }).catch(function(error) {
+    // Handle Errors here.
+    var errorCode = error.code;
+    var errorMessage = error.message;
+    // The email of the user's account used.
+    var email = error.email;
+    // The firebase.auth.AuthCredential type that was used.
+    var credential = error.credential;
+
+    console.log(errorCode, errorMessage, email, credential);
+  });
+}
+
+function logout() {
+  firebase.auth().signOut().then(function() {
+    // Sign-out successful.
+    console.log('Signout successful');
+  }, function(error) {
+    // An error happened.
+    console.log(error);
+  });
 }
 
 

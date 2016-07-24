@@ -8,18 +8,13 @@
 </head>
 <body>
 
-<div id='authentication'></div>
+  <div id='authentication'>
+    <button id='authButton' class='button'></button>
+  </div>
 
-
-<div id 'logo'>
-
-</div>
-
-<!--   <h1>Sounding Out</h1>
- -->
   <div id='question'>
     <span id='flashcard'></span>
-    <button class= 'button nextButton fa fa-long-arrow-right' aria-hidden="true">
+    <button class='fa fa-long-arrow-right fa-2x button nextButton' aria-hidden="true">
     </button>
   </div>
 
@@ -33,14 +28,37 @@
   </div>
 
   <div id='summary'>
-    <h1>Strong</h1>
+    <h2>Summary Report for Jonathan S</h2>
     <canvas id="myChart"></canvas>
+    <p>
+      This profile shows a 3rd grade student who may have learned to read by memorizing words, but has not mastered reading unfamiliar words due to difficulties at the speech level. The weakness is likely masked by the fact that early reading is easy to memorize. We expect this student will begin to noticeably struggle with reading in late elementary.
+    </p>
+
+    <p>
+      It is recommended that this student work on the areas of phonemic awareness using a multisensory program and then review all phonics rules for automaticity. He or she will benefit from working with an adult who can demonstrate clear speech sounds and give immediate, specific feedback.
+    </p>
+
+
+
+
+
+
+  </div>
+
+  <div id='students'>
+    <h1>Select student:</h1>
+    <h3>Ian H</h3>
+    <h3>Jane I</h3>
+    <h3>Sharmila W</h3>
+    <h3>Jonathan S</h3>
   </div>
 
 </body>
 
 <script src="https://www.gstatic.com/firebasejs/3.2.0/firebase.js"></script>
-<script src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
+<script src="https://www.gstatic.com/firebasejs/ui/live/0.4/firebase-ui-auth.js"></script>
+<link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/live/0.4/firebase-ui-auth.css" />
+<script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.6/Chart.min.js"></script>
 
 <script src="client/app.js"></script>
