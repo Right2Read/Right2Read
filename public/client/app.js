@@ -103,9 +103,10 @@ function showSoundingOutSummary() {
 
     if (result > lowEnd && result < highEnd) {
       console.log(score[i], result);
-      return;
     }
   }
+
+  $('#summary').show();
 }
 
 
