@@ -1,6 +1,6 @@
 @font-face {
-    font-family: fontAwesome;
-    src: url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css);
+  font-family: fontAwesome;
+  src: url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css);
 }
 
 #summary {
@@ -83,17 +83,6 @@ img {
   padding-right: 50px;
 }
 
-#flashcard {
-  width: 320px;
-  padding: 40px;
-  border: 15px solid blue;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 50px;
-  border-radius: 8px;
-}
-
 h1 {
   text-align: center;
   font-family: "Avenir";
@@ -127,12 +116,36 @@ h4 {
   color: black;
 }
 
+h5 {
+  text-align: center;
+  font-family: "Avenir";
+  font-style: normal;
+  font-size: 150px;
+  color: black;
+}
+
 p {
   text-align: center;
   font-family: "Avenir";
   font-style: normal;
   font-size: 18px;
   color: black;
+}
+
+#flashcard {
+  width: 720px;
+  height: 480px;
+  border: 15px solid blue;
+  display: inline-block;
+  text-align: center;
+  /*padding: 40px;*/
+  /*margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  margin-top: 50px;*/
+  line-height: 2.4em;
+  border-radius: 2%;
+  margin-top: 100px;
 }
 
 #students {
@@ -253,3 +266,38 @@ body {
   background-color: #f44336;
   color: white
 }
+
+#pdf {
+  float: right;
+  padding-right: 50px;
+}
+
+#right2ReadLogo {
+  width: 293px;
+  height: auto;
+}
+
+#instructorButton {
+  float: right;
+  margin-right: 20px;
+}
+
+#studentButton {
+  float: right;
+  margin-right: 20px;
+}
+
+/*#readingImage {
+  width: 900px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}*/
+
+#readingImage {
+  width: 650px;
+  height: auto;
+  /*margin-left: 200px;*/
+  float: center;
+}
+

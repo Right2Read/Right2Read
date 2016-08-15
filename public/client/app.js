@@ -24,11 +24,15 @@ $(document).ready(function() {
     nonsenseWords = soundingOutData['nonsense-words'];
   });
 
+  $('#pdfButton').hide();
+
   $('#studentButton').click(function() {
     console.log('student button clicked');
     $('#studentButton').hide();
     $('#instructorButton').hide();
     $('#authButton').hide();
+    $('#right2ReadLogo').hide();
+    $('#readingImage').hide();
     type = 'student';
     showFlashcard();
   });
@@ -38,11 +42,13 @@ $(document).ready(function() {
     $('#studentButton').hide();
     $('#instructorButton').hide();
     $('#authButton').hide();
+    $('#readingImage').hide();
     showTeacherRating();
     type = 'instructor';
   });
 
   function showRecommendations() {
+    $('#pdfButton').show();
     $('#videoRecommendations').show();
     $('#appRecommendations').show();
     $('#curriculumRecommendations').show();
@@ -170,8 +176,8 @@ $(document).ready(function() {
       var user = result.user;
 
       $('#authButton').text('Logout');
-
       console.log('logged in');
+
 
     }).catch(function(error) {
       // Handle Errors here.
@@ -217,8 +223,8 @@ $(document).ready(function() {
     // $('#nonsenseScoring').hide();
     if (wordCounter < nonsenseWords.length) {
       if (type === 'student') {
-        $('#flashcard h1').remove();
-        $('#flashcard').prepend('<h1>' + nonsenseWords[wordCounter] + '</h1>');
+        $('#flashcard h5').remove();
+        $('#flashcard').prepend('<h5>' + nonsenseWords[wordCounter] + '</h5>');
         $('#question').show();
         wordCounter++;
       }
