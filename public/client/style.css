@@ -1,6 +1,6 @@
 @font-face {
-    font-family: fontAwesome;
-    src: url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css);
+  font-family: fontAwesome;
+  src: url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css);
 }
 
 #summary {
@@ -10,54 +10,165 @@
 #myChart {
   width: 200px;
   height: 100px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 #question {
+  text-align: center;
   display: none;
+}
+
+#authButton {
+  float: right;
+  background: grey;
 }
 
 #nonsenseScoring {
   display: none;
 }
 
-#flashcard {
-    width: 320px;
-    padding: 10px;
-    border: 15px solid blue;
-    margin: 0;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 8px;
+#appRecommendations {
+  padding: 10px;
+  padding-left: 50;
+  padding-right: 50;
+  padding-bottom: 50px;
+  margin: 0;
+  display: none;
+  border-radius: 8px;
+  text-align: center;
+}
+
+#videoRecommendations {
+  padding: 10px;
+  padding-left: 50;
+  padding-right: 50;
+  padding-bottom: 50px;
+  margin: 0;
+  display: none;
+  border-radius: 8px;
+  text-align: center;
+}
+
+#curriculumRecommendations {
+  padding: 10px;
+  padding-left: 50;
+  padding-right: 50;
+  padding-bottom: 50px;
+  margin: 0;
+  display: none;
+  border-radius: 8px;
+  text-align: center;
+}
+
+#programRecommendations {
+  max-width: none;
+  padding: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+  margin: 0;
+  display: none;
+  border-radius: 8px;
+  text-align: center;
+}
+
+iframe {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+img {
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 h1 {
-    text-align: center;
-    font-family: "Avenir";
-    font-style: normal;
-    font-size: 100px;
-    color: black;
-    text-transform: lowercase;
+  text-align: center;
+  font-family: "Avenir";
+  font-style: normal;
+  font-size: 100px;
+  color: black;
+  text-transform: lowercase;
 }
 
 h2 {
-    text-align: left;
-    font-family: "Avenir";
-    font-style: normal;
-    font-size: 20px;
-    color: black;
+  text-align: center;
+  font-family: "Avenir";
+  font-style: normal;
+  font-size: 60px;
+  color: black;
 }
 
-.nextButton{
-    float: bottom;
-    font-family: "fontAwesome"
-    border: none;
-    color: blue;
-    padding: 12px 10px;
+h3 {
+  text-align: center;
+  font-family: "Avenir";
+  font-style: normal;
+  font-size: 40px;
+  color: black;
+}
+
+h4 {
+  text-align: center;
+  font-family: "Avenir";
+  font-style: normal;
+  font-size: 20px;
+  color: black;
+}
+
+h5 {
+  text-align: center;
+  font-family: "Avenir";
+  font-style: normal;
+  font-size: 150px;
+  color: black;
+}
+
+p {
+  text-align: center;
+  font-family: "Avenir";
+  font-style: normal;
+  font-size: 18px;
+  color: black;
+}
+
+#flashcard {
+  width: 720px;
+  height: 480px;
+  border: 15px solid blue;
+  display: inline-block;
+  text-align: center;
+  /*padding: 40px;*/
+  /*margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  margin-top: 50px;*/
+  line-height: 2.4em;
+  border-radius: 2%;
+  margin-top: 100px;
+}
+
+#students {
+  display: none;
+}
+
+/*h3 {
     text-align: center;
-    display: inline-block;
-    font-size: 16px;
-    border-radius: 8px;
+    font-family: "Avenir";
+    font-style: normal;
+    font-size: 50px;
+    color: black;
+}*/
+
+.nextButton{
+  float: bottom;
+  font-family: "fontAwesome"
+  border: none;
+  color: blue;
+  padding: 12px 10px;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 8px;
 }
 
 $blue: #a3d5d3;
@@ -78,7 +189,6 @@ body {
   border: none;
   color: white;
   padding: 16px 22px;
-  text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
@@ -89,6 +199,7 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
 }
 
 .button1 {
@@ -155,3 +266,38 @@ body {
   background-color: #f44336;
   color: white
 }
+
+#pdf {
+  float: right;
+  padding-right: 50px;
+}
+
+#right2ReadLogo {
+  width: 293px;
+  height: auto;
+}
+
+#instructorButton {
+  float: right;
+  margin-right: 20px;
+}
+
+#studentButton {
+  float: right;
+  margin-right: 20px;
+}
+
+/*#readingImage {
+  width: 900px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}*/
+
+#readingImage {
+  width: 650px;
+  height: auto;
+  /*margin-left: 200px;*/
+  float: center;
+}
+

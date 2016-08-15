@@ -7,23 +7,32 @@
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 </head>
 <body>
-
-
-
-<div id 'logo'>
-
-</div>
-
-<!--   <h1>Sounding Out</h1>
- -->
-  <div id='question'>
-    <span id='flashcard'></span>
-    <button class= 'button nextButton fa fa-long-arrow-right' aria-hidden="true">
-    </button>
+  <div id='logo'>
+    <img id='right2ReadLogo' src='images/Right2Read-WebsiteIconAndText.png' alt='Logo'/>
+    <button id='instructorButton' class='button'>Instructor</button>
+    <button id='studentButton' class='button'>Student</button>
   </div>
 
+  <div id='largeImg'>
+    <img id='readingImage' src='images/reading2.jpg'/>
+  </div>
+
+  <!-- <div id='authentication'>
+    <button id='authButton' class='button'></button>
+  </div> -->
+
+  <div id='pdf'>
+    <button id='pdfButton' class='button'>PDF</button>
+  </div>
+
+  <div id='question'>
+    <span id='flashcard'></span>
+    <!-- <button class='fa fa-long-arrow-right fa-2x button nextButton' aria-hidden="true">
+    </button> -->
+  </div>
 
   <div id='nonsenseScoring'>
+    <h2>Sounding Out Words Assessment</h2>
     <button class="button button1">Automatic Correct</button>
     <button class="button button2">Labored Correct</button>
     <button class="button button3">Labored Wrong</button>
@@ -32,14 +41,72 @@
   </div>
 
   <div id='summary'>
-    <h1>Strong</h1>
+    <h2>Summary Report for Avikam C.</h2>
     <canvas id="myChart"></canvas>
+    <h3>Overall Recommendations</h3>
+    <p>
+      This profile shows a 3rd grade student who may have learned to read by memorizing words, but has not mastered reading unfamiliar words due to difficulties at the speech level. The weakness is likely masked by the fact that early reading is easy to memorize. We expect this student will begin to noticeably struggle with reading in late elementary.
+    </p>
+
+    <p>
+      It is recommended that this student work on the areas of phonemic awareness using a multisensory program and then review all phonics rules for automaticity. He or she will benefit from working with an adult who can demonstrate clear speech sounds and give immediate, specific feedback.
+    </p>
+    <br/>
+
+    <div id="appRecommendations">
+      <h3>App Recommendations</h3>
+      <a href="http://itunes.apple.com/us/app/read-me-stories-childrens/id362042422?mt=8"><img src="images/readMeStories.jpg" alt="Test"/></a>
+
+      <a href="http://itunes.apple.com/gb/app/hairy-words-1/id966168187?ls=1&mt=8"><img src="images/hairyWords.jpg" alt="Test"/></a>
+
+      <a href="http://itunes.apple.com/gb/app/hairy-phonics-1/id938105297?mt=8"><img src="images/hairyPhonics.jpg" alt="Test"/></a>
+
+      <a href="http://itunes.apple.com/us/app/abcmouse.com-early-learning/id586328581?mt=8"><img src="images/abcMouse.jpg" alt="Test"/></a>
+    </div>
+
+    <div id='videoRecommendations'>
+      <h3>Video Recommendations</h3>
+
+      <iframe width="150" height="84" src="https://www.youtube.com/embed/V7yREETwdmU" frameborder="0" allowfullscreen></iframe>
+
+      <iframe width="150" height="84" src="https://www.youtube.com/embed/noSCva4ptZQ" frameborder="0" allowfullscreen></iframe>
+
+      <iframe width="150" height="84" src="https://www.youtube.com/embed/i1H-LTV4pkU" frameborder="0" allowfullscreen></iframe>
+
+      <iframe width="150" height="84" src="https://www.youtube.com/embed/Z6op3aC6r-k" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <div id='curriculumRecommendations'>
+      <h3>Curriculum Recommendations</h3>
+
+      <img src="images/iCanRead.png" alt="Test"/>
+
+      <a href="https://www.amazon.com/Blast-Off-Reading-Orton-Gillingham-Struggling/dp/0983199639?ie=UTF8&keywords=orlassino&qid=1359980851&ref_=sr_1_1&sr=8-1"><img src="images/blastOffToReading.png" alt="Test"/></a>
+    </div>
+
+    <div id='programRecommendations'>
+      <h3>Program Recommendations</h3>
+
+      <a href="http://www.wilsonlanguage.com/programs/fundations/"><img src="images/fundations.png" alt="Test"/></a>
+
+      <a href="https://bartonreading.com"><img src="images/barton.png" alt="Test"/></a>
+    </div>
+  </div>
+
+  <div id='students'>
+    <h1>Select student:</h1>
+    <h4>Ian H</h4>
+    <h4>Jane I</h4>
+    <h4>Sharmila W</h4>
+    <h4>Jonathan S</h4>
   </div>
 
 </body>
 
 <script src="https://www.gstatic.com/firebasejs/3.2.0/firebase.js"></script>
-<script src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
+<script src="https://www.gstatic.com/firebasejs/ui/live/0.4/firebase-ui-auth.js"></script>
+<link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/live/0.4/firebase-ui-auth.css" />
+<script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.6/Chart.min.js"></script>
 
 <script src="client/app.js"></script>
